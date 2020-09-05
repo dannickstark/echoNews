@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- Tool Bar + filter -->
     <v-toolbar color="orange accent-1">
       <v-app-bar-nav-icon class="hidden-sm-and-down"></v-app-bar-nav-icon>
       <v-toolbar-title class="title mr-6 hidden-sm-and-down"
@@ -68,10 +69,11 @@
       </template>
     </v-toolbar>
 
+    <!-- Main document -->
     <div class="d-none d-md-block col-md-6">
       <div class="row">
         <div
-          v-for="(item, index) in 4"
+          v-for="(item, index) in 20"
           :key="'news' + index"
           class="col-md-6 mb-5"
         >
@@ -92,7 +94,11 @@ export default {
   },
   data: () => {
     return {
-      searchText: null
+      searchText: null,
+      countrys: [],
+      categorys: [],
+      sources: [],
+      pageSizes: [5, 10, 20]
     };
   },
 

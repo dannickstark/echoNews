@@ -23,7 +23,7 @@
       <v-spacer></v-spacer>
 
       <v-btn v-if="dropable" icon @click="show = !show">
-        <v-icon>{{ show ? "fa-chevron-up" : "fa-chevron-down" }}</v-icon>
+        <v-icon>{{ show ? "mdi-chevron-up" : "mdi-chevron-down" }}</v-icon>
       </v-btn>
     </v-card-actions>
 
