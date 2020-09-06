@@ -40,7 +40,7 @@
 
         <!-- Rigth suggestion -->
         <div class="suggestion d-none d-sm-block col-md-6">
-          <div class="row">
+          <div v-if="topItems" class="row">
             <div
               v-for="(item, index) in 4"
               :key="'news' + index"
