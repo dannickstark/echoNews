@@ -7,13 +7,8 @@
 <script>
 export default {
   name: "App",
-
-  components: {},
-
-  data: () => ({
-    //
-  })
+  components: {}
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss"></style>
